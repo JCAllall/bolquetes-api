@@ -4,6 +4,13 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { UsersModule } from './users/users.module';
 import { AuthModule } from './auth/auth.module';
 import { CompaniesModule } from './companies/companies.module';
+import { ServicesModule } from './services/services.module';
+import { DriversModule } from './drivers/drivers.module';
+import { VehiclesModule } from './vehicles/vehicles.module';
+import { ZonesModule } from './zones/zones.module';
+import { OrdersModule } from './orders/orders.module';
+import { PaymentsModule } from './payments/payments.module';
+import { ReviewsModule } from './reviews/reviews.module';
 
 @Module({
   imports: [
@@ -26,6 +33,13 @@ import { CompaniesModule } from './companies/companies.module';
     UsersModule,
     AuthModule,
     CompaniesModule,
+    ServicesModule,
+    DriversModule,
+    VehiclesModule,
+    ZonesModule,
+    OrdersModule,
+    PaymentsModule,
+    ReviewsModule,
   ],
 })
 export class AppModule {}
